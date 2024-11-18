@@ -175,6 +175,22 @@ button:focus {
   }
 }
 
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.8rem 1.5rem !important; /* Reduce padding */
+    font-size: 1.1rem !important;      /* Smaller font size */
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.8rem !important; /* Compact links */
+  }
+
+  .logo {
+    height: 1.2em !important;
+    width: 2.0em !important; /* Smaller logo */
+  }
+}
+
 .navbar-nav .nav-item {
   position: relative;
   margin-left: 20px;
@@ -250,64 +266,72 @@ button:focus {
   height: 100%;
 }
 
+/* General Styling for the Home Section */
 .home-header {
   padding-top: 80px !important;
 }
 
+/* Home Section with a background image and gradient */
 .home-section {
   position: relative;
   z-index: -1;
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
+  background-size: cover; /* Make sure the background covers the entire section */
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding: 30px 20px !important; /* Use padding for better spacing */
 }
 
+/* Home Content Styling */
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 5rem 0 2rem !important; /* Adjust padding for better fit on smaller screens */
   color: whitesmoke;
-  text-align: left;
+  text-align: center; /* Center align text for smaller screens */
 }
 
+/* Headings */
 .heading {
-  font-size: 2.4em !important;
-  padding-left: 50px !important;
+  font-size: 2rem !important; /* Reduce font size */
+  padding-left: 20px !important;
 }
 
 .heading-name {
-  font-size: 2.5em !important;
-  padding-left: 45px !important;
+  font-size: 2.1rem !important;
+  padding-left: 15px !important;
 }
 
 .main-name {
   color: #cd5ff8;
 }
 
+/* Typewriter Effect */
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
+  font-size: 1.8em !important;
   color: #be6adf !important;
   font-weight: 600 !important;
 }
+
 .Typewriter__cursor {
-  font-size: 2.4em !important;
+  font-size: 2em !important;
   color: #b562d6 !important;
 }
 
 @media (max-width: 767px) {
   .Typewriter__wrapper {
-    font-size: 1.4em !important;
+    font-size: 1.2em !important;
     font-weight: 500 !important;
-    position: absolute !important;
+    position: relative !important;
   }
   .Typewriter__cursor {
     display: none !important;
   }
 }
 
+/* Avatar Styling */
 .myAvtar {
+  display: flex; /* Use flexbox to center */
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding-top: 5em !important;
 }
 
 @media (max-width: 767px) {
@@ -317,76 +341,96 @@ button:focus {
   }
 }
 
+/* About Section */
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding: 50px 20px !important; /* Use padding for better responsiveness */
 }
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
-  padding-bottom: 20px !important;
+  padding: 50px 20px !important;
   text-align: center;
 }
 
 .home-about-body {
-  padding-top: 50px;
-  font-size: 1.2em !important;
-  text-align: left;
+  padding-top: 30px;
+  font-size: 1em !important; /* Adjust font size */
+  text-align: center; /* Center text for smaller screens */
 }
 
+/* Social Media Links */
 .home-about-social {
   text-align: center !important;
-  padding-top: 25px;
+  padding-top: 20px;
   color: white !important;
 }
 
 .home-about-social-links {
-  justify-content: center !important;
-  padding-top: 15px !important;
-  display: inline-block !important;
-  position: relative !important;
-  padding-inline-start: 0 !important;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px !important;
 }
 
 .home-social-icons {
-  position: relative !important;
-  display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
-  text-align: center !important;
-  font-size: 1.2em !important;
-  line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px !important; /* Reduce icon size */
+  height: 35px !important;
+  font-size: 1em !important;
+  line-height: normal !important;
+  background: rgba(255, 255, 255, 0.9) !important;
   border-radius: 50% !important;
-  transition: 0.5s !important;
+  transition: 0.3s !important;
+  margin: 5px; /* Add margin for spacing between icons */
 }
 
 .home-social-icons::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
   background: #68187a;
-  transition: 0.5s;
-  transform: scale(0.9);
+  transform: scale(0.8); /* Adjust scale for better effect */
   z-index: -1;
 }
 
 .home-social-icons:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  transform: scale(1);
+  box-shadow: 0 0 10px #801f95;
 }
 
 .home-social-icons:hover {
   color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  box-shadow: 0 0 3px #87209e;
+  text-shadow: 0 0 1px #87209e;
 }
+
+/* Media Query for Small Devices */
+@media (max-width: 576px) {
+  .home-content {
+    padding: 3rem 1rem !important;
+    font-size: 0.9em !important; /* Smaller font size */
+  }
+
+  .heading,
+  .heading-name {
+    font-size: 1.5em !important; /* Reduce font size further */
+    padding-left: 10px !important;
+  }
+
+  .home-about-description {
+    padding: 30px 10px !important; /* Compact padding */
+  }
+
+  .home-about-body {
+    font-size: 0.9em !important;
+  }
+
+  .home-social-icons {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 0.9em !important;
+  }
+}
+
 
 .social-icons {
   display: inline-block !important;
