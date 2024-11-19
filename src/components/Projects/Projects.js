@@ -18,6 +18,32 @@ function Projects() {
           Here are a few companies I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={editor}
+              isBlog={false}
+              title="MILMA ERCMPU Ltd"
+              description="Conducted market research and analyzed customer feedback to identify opportunities for product improvements and enhance customer experience.
+              Evaluated customer engagement and market trends, driving strategic
+              sales initiatives that expanded market reach and identified new sales
+              opportunities.
+              Led outbound sales efforts, converting leads into sales and
+              contributing to revenue growth while maintaining high customer
+              satisfaction and product quality.
+              Managed customer acquisition and resolved client concerns, building
+              long-term relationships and enhancing customer retention.
+              Supported marketing and operational efficiency initiatives, optimizing
+              delivery processes and increasing market presence."
+              // ghLink="https://github.com/soumyajit4419/Editor.io"
+              // demoLink="https://editor.soumya-jit.tech/"              
+            />
+          </Col>
+
+
+
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
@@ -63,28 +89,6 @@ enhance financial strategy and operations."
               // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="MILMA ERCMPU Ltd"
-              description="Conducted market research and analyzed customer feedback to identify opportunities for product improvements and enhance customer experience.
-              Evaluated customer engagement and market trends, driving strategic
-              sales initiatives that expanded market reach and identified new sales
-              opportunities.
-              Led outbound sales efforts, converting leads into sales and
-              contributing to revenue growth while maintaining high customer
-              satisfaction and product quality.
-              Managed customer acquisition and resolved client concerns, building
-              long-term relationships and enhancing customer retention.
-              Supported marketing and operational efficiency initiatives, optimizing
-              delivery processes and increasing market presence."
-              // ghLink="https://github.com/soumyajit4419/Editor.io"
-              // demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
           {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
