@@ -7,6 +7,7 @@ import {
   AiOutlineTwitter,
   AiFillInstagram,
   AiOutlineWhatsApp,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -104,6 +105,17 @@ function Home2() {
                   className="icon-colour home-social-icons"
                 >
                   <AiFillInstagram />
+                </a>
+              </li>
+
+              <li className="social-icons">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&to=nairanandhakrishnan@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiOutlineMail />
                 </a>
               </li>
             </ul>
