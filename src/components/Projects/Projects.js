@@ -20,75 +20,38 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
         <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="MILMA ERCMPU Ltd"
-              description="Conducted market research and analyzed customer feedback to identify opportunities for product improvements and enhance customer experience.
-              Evaluated customer engagement and market trends, driving strategic
-              sales initiatives that expanded market reach and identified new sales
-              opportunities.
-              Led outbound sales efforts, converting leads into sales and
-              contributing to revenue growth while maintaining high customer
-              satisfaction and product quality.
-              Managed customer acquisition and resolved client concerns, building
-              long-term relationships and enhancing customer retention.
-              Supported marketing and operational efficiency initiatives, optimizing
-              delivery processes and increasing market presence."
-              // ghLink="https://github.com/soumyajit4419/Editor.io"
-              // demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
+  <ProjectCard
+    imgPath={editor}
+    isBlog={false}
+    title="MILMA ERCMPU Ltd"
+    description="Conducted market research and analyzed customer feedback to identify opportunities for product improvements and enhance customer experience. Evaluated customer engagement and market trends, driving strategic sales initiatives that expanded market reach and identified new sales opportunities. Led outbound sales efforts, converting leads into sales and contributing to revenue growth while maintaining high customer satisfaction and product quality. Managed customer acquisition and resolved client concerns, building long-term relationships and enhancing customer retention. Supported marketing and operational efficiency initiatives, optimizing delivery processes and increasing market presence."
+    // ghLink="https://github.com/soumyajit4419/Editor.io"
+    // demoLink="https://editor.soumya-jit.tech/"
+  />
+</Col>
 
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={chatify}
+    isBlog={false}
+    title="TE Connectivity Pvt Ltd"
+    description="Collaborated with cross-functional teams to address challenges in implementing new sales policies and strategies. Analyzed customer feedback and market data to identify potential solutions, optimizing customer engagement and retention. Used ERP and CRM tools like Salesforce to streamline operations and improve productivity. Supported management in preparing detailed reports and presentations to inform decision-making and enhance operational performance."
+    // ghLink="https://github.com/soumyajit4419/Chatify"
+    // demoLink="https://chatify-49.web.app/"
+  />
+</Col>
 
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={bitsOfCode}
+    isBlog={false}
+    title="Bharat Petroleum Corporation Ltd"
+    description="Analyzed BPCL's financial statements (balance sheet, income statement, cash flow) to assess financial health, focusing on key metrics like liquidity ratios, debt-to-equity ratio, and cash flow sufficiency. Performed comprehensive financial analysis using ROI, profitability ratios, and other key performance indicators (KPIs) to evaluate business performance and inform strategic decisions. Evaluated BPCL’s investment portfolio and capital allocation to assess wealth management effectiveness and ensure alignment with organizational financial goals. Benchmarked BPCL’s financial performance against industry peers, identifying growth opportunities and providing actionable insights to enhance financial strategy and operations."
+    // ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+    // demoLink="https://blogs.soumya-jit.tech/"
+  />
+</Col>
 
-
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="TE Connectivity Pvt Ltd"
-              description="Conducted market research and analyzed customer feedback to
-identify opportunities for product improvements and enhance
-customer experience.
-Evaluated customer engagement and market trends, driving strategic
-sales initiatives that expanded market reach and identified new sales
-opportunities.
-Led outbound sales efforts, converting leads into sales and
-contributing to revenue growth while maintaining high customer
-satisfaction and product quality.
-Managed customer acquisition and resolved client concerns, building
-long-term relationships and enhancing customer retention.
-Supported marketing and operational efficiency initiatives, optimizing
-delivery processes and increasing market presence."
-              // ghLink="https://github.com/soumyajit4419/Chatify"
-              // demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bharat Petroleum Corporation Ltd"
-              description="Analyzed BPCL's financial statements (balance sheet, income
-statement, cash flow) to assess financial health, focusing on key
-metrics like liquidity ratios, debt-to-equity ratio, and cash flow
-sufficiency.
-Performed comprehensive financial analysis using ROI, profitability
-ratios, and other key performance indicators (KPIs) to evaluate
-business performance and inform strategic decisions.
-Evaluated BPCL’s investment portfolio and capital allocation to assess
-wealth management effectiveness and ensure alignment with
-organizational financial goals.
-Benchmarked BPCL’s financial performance against industry peers,
-identifying growth opportunities and providing actionable insights to
-enhance financial strategy and operations."
-              // ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              // demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
           {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
