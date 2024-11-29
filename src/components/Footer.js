@@ -87,6 +87,17 @@ function Footer() {
             >
               Instagram
             </a>
+            |
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=nairanandhakrishnan@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              style={iconStyle}
+              onMouseOver={(e) => (e.target.style.color = iconHoverStyle.color)}
+              onMouseOut={(e) => (e.target.style.color = "white")}
+            >
+              Email
+            </a>
           </div>
         </Col>
       </Row>
