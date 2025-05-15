@@ -1,25 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.cfd5b2f3.css",
-    "main.js": "/static/js/main.d8fe8ab4.js",
+    "main.js": "/static/js/main.ac0a33da.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/about1.png": "/static/media/about1.9656fbb6a8007364c0d1.png",
     "static/media/home3.png": "/static/media/home3.6df08245879a9a1f73b5.png",
-    "static/media/Anandhakrishnan M Nair.pdf": "/static/media/Anandhakrishnan M Nair.badf44dc86143ff95899.pdf",
+    "static/media/Anandhakrishnan M Nair.pdf": "/static/media/Anandhakrishnan M Nair.7f174f3eb158ab918909.pdf",
+    "static/media/anandhu4.jpeg": "/static/media/anandhu4.c83fa4188eee112b0a6b.jpeg",
     "static/media/milmalogo_small.svg": "/static/media/milmalogo_small.acb12f6a2adb6c643da1f87cd9952bff.svg",
+    "static/media/bearhouse.png": "/static/media/bearhouse.77505a4d71b76941a6f2.png",
     "static/media/BPCL.png": "/static/media/BPCL.bf704626fad1546998fa.png",
     "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
-    "static/media/Anandhu.png": "/static/media/Anandhu.412310b9b07f12c32b8f.png",
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/index.html",
     "main.cfd5b2f3.css.map": "/static/css/main.cfd5b2f3.css.map",
-    "main.d8fe8ab4.js.map": "/static/js/main.d8fe8ab4.js.map",
+    "main.ac0a33da.js.map": "/static/js/main.ac0a33da.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cfd5b2f3.css",
-    "static/js/main.d8fe8ab4.js"
+    "static/js/main.ac0a33da.js"
   ]
 }

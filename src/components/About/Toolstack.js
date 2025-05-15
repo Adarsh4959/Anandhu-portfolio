@@ -23,10 +23,10 @@ function Toolstack() {
         <SiPowerbi />
         <p style={{ fontSize: '12px' }}>Power Bi</p>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      {/* <Col xs={4} md={2} className="tech-icons">
         <SiOracle />
         <p style={{ fontSize: '12px' }}>Oracle Database</p>
-      </Col>
+      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <SiFigma />
         <p style={{ fontSize: '12px' }}>Figma</p>
@@ -39,10 +39,10 @@ function Toolstack() {
         <SiMicrosoftexcel />
         <p style={{ fontSize: '12px' }}>Microsoft Excel</p>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      {/* <Col xs={4} md={2} className="tech-icons">
         <SiTableau />
         <p style={{ fontSize: '12px' }}>Tableau</p>
-      </Col>
+      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <SiSalesforce />
         <p style={{ fontSize: '12px' }}>Sales Force</p>
