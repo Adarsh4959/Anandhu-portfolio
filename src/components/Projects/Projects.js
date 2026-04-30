@@ -6,6 +6,7 @@ import editor from "../../Assets/Projects/milmalogo_small.svg";
 import chatify from "../../Assets/Projects/TECC.png";
 import bitsOfCode from "../../Assets/Projects/BPCL.png";
 import bearhouse from "../../Assets/Projects/bearhouse.png";
+import centro from "../../Assets/Projects/centro.jpeg"; // ✅ added image
 
 function Projects() {
   return (
@@ -19,6 +20,28 @@ function Projects() {
           Here are a few companies I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          {/* ✅ NEW CARD ADDED AT TOP */}
+          <Col md={5} className="project-card">
+            <ProjectCard
+              imgPath={centro}
+              isBlog={false}
+              title="Reliance Centro"
+              description={
+                <ul>
+                  <li>Worked as a Merchandising Executive managing in-store product displays and layouts.</li>
+                  <li>Ensured proper product placement to maximize visibility and sales performance.</li>
+                  <li>Coordinated with inventory teams to maintain optimal stock levels.</li>
+                  <li>Analyzed customer preferences and sales trends to improve merchandising strategies.</li>
+                  <li>Maintained visual standards and ensured brand guidelines were followed.</li>
+                  <li>Supported promotional campaigns and seasonal merchandising activities.</li>
+                </ul>
+              }
+            />
+          </Col>
+
+          {/* EXISTING CARDS */}
+
           <Col md={5} className="project-card">
             <ProjectCard
               imgPath={bearhouse}
@@ -90,6 +113,7 @@ function Projects() {
               }
             />
           </Col>
+
         </Row>
       </Container>
     </Container>
