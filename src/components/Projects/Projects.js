@@ -24,7 +24,7 @@ function Projects() {
           {/* ✅ NEW CARD ADDED AT TOP */}
           <Col md={5} className="project-card">
             <ProjectCard
-              imgPath={centro}
+              imgPath={bearhouse}
               isBlog={false}
               title="Reliance Centro"
               description={
