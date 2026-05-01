@@ -6,7 +6,7 @@ import editor from "../../Assets/Projects/milmalogo_small.svg";
 import chatify from "../../Assets/Projects/TECC.png";
 import bitsOfCode from "../../Assets/Projects/BPCL.png";
 import bearhouse from "../../Assets/Projects/bearhouse.png";
-import centro from "../../Assets/Projects/centro.jpeg";
+import centro from "../../Assets/Projects/centro.png";
 
 function Projects() {
   return (
