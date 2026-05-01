@@ -2,6 +2,81 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+
+import editor from "../../Assets/Projects/milmalogo_small.svg";
+import chatify from "../../Assets/Projects/TECC.png";
+import bitsOfCode from "../../Assets/Projects/BPCL.png";
+import bearhouse from "../../Assets/Projects/bearhouse.png";
+import centro from "../../Assets/Projects/centro.png";
+
+function Projects() {
+  console.log("🔥 Projects component loaded");
+  console.log("📸 Centro image path:", centro);
+
+  return (
+    <Container fluid className="project-section">
+      {console.log("📦 Container rendering")}
+
+      <Particle />
+
+      <Container>
+        {console.log("📦 Inner Container rendering")}
+
+        <h1 className="project-heading">
+          My Recent <strong className="purple">Works </strong>
+        </h1>
+
+        <p style={{ color: "white" }}>
+          Here are a few companies I've worked on recently.
+        </p>
+
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          {console.log("🚀 Row rendering started")}
+
+          {/* TEST BLOCK */}
+          <Col md={12}>
+            {console.log("🟥 Test block rendering")}
+            <div style={{ background: "red", color: "white", padding: "10px" }}>
+              DEBUG TEST BLOCK
+            </div>
+          </Col>
+
+          {/* RELIANCE CENTRO */}
+          <Col md={5}>
+            {console.log("🟡 Inside Centro Col")}
+
+            <ProjectCard
+              imgPath={centro}
+              isBlog={false}
+              title="Reliance Centro"
+              description="Test description for Centro"
+            />
+
+            {console.log("🧩 After ProjectCard")}
+          </Col>
+
+          {/* OTHER CARD */}
+          <Col md={5}>
+            {console.log("🟢 Bearhouse rendering")}
+
+            <ProjectCard
+              imgPath={bearhouse}
+              isBlog={false}
+              title="THE BEAR HOUSE"
+              description="Test Bearhouse"
+            />
+          </Col>
+
+        </Row>
+      </Container>
+    </Container>
+  );
+}
+
+export default Projects;import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import ProjectCard from "./ProjectCards";
+import Particle from "../Particle";
 import editor from "../../Assets/Projects/milmalogo_small.svg";
 import chatify from "../../Assets/Projects/TECC.png";
 import bitsOfCode from "../../Assets/Projects/BPCL.png";
