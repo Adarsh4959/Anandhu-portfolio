@@ -15,15 +15,11 @@ function Projects() {
 
   return (
     <Container fluid className="project-section">
-      {console.log("📦 Container rendering")}
-
       <Particle />
 
       <Container>
-        {console.log("📦 Inner Container rendering")}
-
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Works</strong>
         </h1>
 
         <p style={{ color: "white" }}>
@@ -31,129 +27,67 @@ function Projects() {
         </p>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {console.log("🚀 Row rendering started")}
-
-          {/* TEST BLOCK */}
-          <Col md={12}>
-            {console.log("🟥 Test block rendering")}
-            <div style={{ background: "red", color: "white", padding: "10px" }}>
-              DEBUG TEST BLOCK
-            </div>
-          </Col>
-
-          {/* RELIANCE CENTRO */}
-          <Col md={5}>
-            {console.log("🟡 Inside Centro Col")}
-
-            <ProjectCard
-              imgPath={centro}
-              isBlog={false}
-              title="Reliance Centro"
-              description="Test description for Centro"
-            />
-
-            {console.log("🧩 After ProjectCard")}
-          </Col>
-
-          {/* OTHER CARD */}
-          <Col md={5}>
-            {console.log("🟢 Bearhouse rendering")}
-
-            <ProjectCard
-              imgPath={bearhouse}
-              isBlog={false}
-              title="THE BEAR HOUSE"
-              description="Test Bearhouse"
-            />
-          </Col>
-
-        </Row>
-      </Container>
-    </Container>
-  );
-}
-
-export default Projects;import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import editor from "../../Assets/Projects/milmalogo_small.svg";
-import chatify from "../../Assets/Projects/TECC.png";
-import bitsOfCode from "../../Assets/Projects/BPCL.png";
-import bearhouse from "../../Assets/Projects/bearhouse.png";
-import centro from "../../Assets/Projects/centro.png";
-
-function Projects() {
-  return (
-    <Container fluid className="project-section">
-      <Particle />
-      <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-
-        <p style={{ color: "white" }}>
-          Here are a few companies I've worked on recently.
-        </p>
-
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-
-          {/* 🔴 FORCED TEST BLOCK */}
+          
+          {/* 🔴 DEBUG BLOCK */}
           <Col md={12}>
             <div style={{ background: "red", color: "white", padding: "10px", marginBottom: "10px" }}>
               IF YOU SEE THIS → PROJECTS.JS IS WORKING
             </div>
           </Col>
 
-          {/* RELIANCE CENTRO */}
+          {/* 🟡 RELIANCE CENTRO */}
           <Col md={5}>
+            {console.log("🟡 Rendering Centro Card")}
+
             <div style={{ border: "2px solid yellow", padding: "10px", marginBottom: "10px" }}>
               <ProjectCard
                 imgPath={centro}
                 isBlog={false}
                 title="Reliance Centro"
-                description="Worked as a Merchandising Executive managing product displays, inventory coordination, customer behavior analysis, and sales optimization."
+                description="Worked as a Merchandising Executive managing product displays, inventory coordination, and sales optimization."
               />
             </div>
           </Col>
 
-          {/* THE BEAR HOUSE */}
+          {/* 🟢 BEAR HOUSE */}
           <Col md={5}>
+            {console.log("🟢 Rendering Bearhouse")}
+
             <ProjectCard
               imgPath={bearhouse}
               isBlog={false}
               title="THE BEAR HOUSE"
-              description="Managed product catalogs across ecommerce platforms like Amazon, Flipkart, Nykaa, and Shopify."
+              description="Managed product catalogs across ecommerce platforms."
             />
           </Col>
 
-          {/* MILMA */}
+          {/* 🔵 MILMA */}
           <Col md={5}>
             <ProjectCard
               imgPath={editor}
               isBlog={false}
               title="MILMA ERCMPU Ltd"
-              description="Conducted market research, handled sales, and improved customer experience."
+              description="Handled market research and customer experience improvements."
             />
           </Col>
 
-          {/* TE CONNECTIVITY */}
+          {/* 🟣 TE CONNECTIVITY */}
           <Col md={5}>
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
               title="TE Connectivity Pvt Ltd"
-              description="Worked on CRM tools, sales strategies, and operational improvements."
+              description="Worked with CRM tools and improved operations."
             />
           </Col>
 
-          {/* BPCL */}
+          {/* ⚫ BPCL */}
           <Col md={5}>
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
               title="Bharat Petroleum Corporation Ltd"
-              description="Performed financial analysis and evaluated investment performance."
+              description="Performed financial analysis and evaluation."
             />
           </Col>
 
