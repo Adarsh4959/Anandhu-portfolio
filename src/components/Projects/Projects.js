@@ -1,100 +1,269 @@
 import React from "react";
+
 import { Container, Row, Col } from "react-bootstrap";
+
 import ProjectCard from "./ProjectCards";
+
 import Particle from "../Particle";
 
 import editor from "../../Assets/Projects/milmalogo_small.svg";
+
 import chatify from "../../Assets/Projects/TECC.png";
+
 import bitsOfCode from "../../Assets/Projects/BPCL.png";
+
 import bearhouse from "../../Assets/Projects/bearhouse.png";
-import centro from "../../Assets/Projects/centro.png";
+
+
+import centro from "../../Assets/Projects/centro.jpeg"; // ✅ added image
+
+
 
 function Projects() {
-  console.log("🔥 Projects component loaded");
-  console.log("📸 Centro image path:", centro);
 
   return (
+
     <Container fluid className="project-section">
+
       <Particle />
 
       <Container>
+
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works</strong>
+
+          My Recent <strong className="purple">Works </strong>
+
         </h1>
 
         <p style={{ color: "white" }}>
+
           Here are a few companies I've worked on recently.
+
         </p>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          
-          {/* 🔴 DEBUG BLOCK */}
-          <Col md={12}>
-            <div style={{ background: "red", color: "white", padding: "10px", marginBottom: "10px" }}>
-              IF YOU SEE THIS → PROJECTS.JS IS WORKING
-            </div>
-          </Col>
 
-          {/* 🟡 RELIANCE CENTRO */}
-          <Col md={5}>
-            {console.log("🟡 Rendering Centro Card")}
 
-            <div style={{ border: "2px solid yellow", padding: "10px", marginBottom: "10px" }}>
-              <ProjectCard
-                imgPath={centro}
-                isBlog={false}
-                title="Reliance Centro"
-                description="Worked as a Merchandising Executive managing product displays, inventory coordination, and sales optimization."
-              />
-            </div>
-          </Col>
 
-          {/* 🟢 BEAR HOUSE */}
-          <Col md={5}>
-            {console.log("🟢 Rendering Bearhouse")}
+
+
+          {/* ✅ NEW CARD ADDED AT TOP */}
+
+
+          <Col md={5} className="project-card">
+
 
             <ProjectCard
+
+
+              imgPath={centro}
+
+
+              isBlog={false}
+
+
+              title="Reliance Centro"
+
+
+              description={
+
+
+                <ul>
+
+
+                  <li>Worked as a Merchandising Executive managing in-store product displays and layouts.</li>
+
+
+                  <li>Ensured proper product placement to maximize visibility and sales performance.</li>
+
+
+                  <li>Coordinated with inventory teams to maintain optimal stock levels.</li>
+
+
+                  <li>Analyzed customer preferences and sales trends to improve merchandising strategies.</li>
+
+
+                  <li>Maintained visual standards and ensured brand guidelines were followed.</li>
+
+
+                  <li>Supported promotional campaigns and seasonal merchandising activities.</li>
+
+
+                </ul>
+
+
+              }
+
+
+            />
+
+
+          </Col>
+
+
+
+
+
+          {/* EXISTING CARDS */}
+
+
+
+
+          <Col md={5} className="project-card">
+
+            <ProjectCard
+
               imgPath={bearhouse}
+
               isBlog={false}
+
               title="THE BEAR HOUSE"
-              description="Managed product catalogs across ecommerce platforms."
+
+              description={
+
+                <ul>
+
+                  <li>Managed product catalogs across multiple ecommerce platforms.</li>
+
+                  <li>Ensured accurate listings, pricing updates, and content optimization.</li>
+
+                  <li>Oversaw listings on Amazon, Flipkart, Nykaa, and Shopify.</li>
+
+                  <li>Conducted quality checks, rectified errors, and ensured platform compliance.</li>
+
+                  <li>Optimized product descriptions and visuals for better engagement.</li>
+
+                  <li>Supported new outlet openings through inventory and merchandising coordination.</li>
+
+                </ul>
+
+              }
+
             />
+
           </Col>
 
-          {/* 🔵 MILMA */}
-          <Col md={5}>
+
+
+          <Col md={5} className="project-card">
+
             <ProjectCard
+
               imgPath={editor}
+
               isBlog={false}
+
               title="MILMA ERCMPU Ltd"
-              description="Handled market research and customer experience improvements."
+
+              description={
+
+                <ul>
+
+                  <li>Conducted market research and analyzed customer feedback.</li>
+
+                  <li>Identified product improvement opportunities and enhanced customer experience.</li>
+
+                  <li>Led outbound sales efforts and converted leads into revenue growth.</li>
+
+                  <li>Maintained customer satisfaction and ensured high product quality.</li>
+
+                  <li>Managed customer acquisition and resolved client concerns.</li>
+
+                  <li>Enhanced customer retention and supported marketing initiatives.</li>
+
+                  <li>Optimized delivery processes to increase market presence.</li>
+
+                </ul>
+
+              }
+
             />
+
           </Col>
 
-          {/* 🟣 TE CONNECTIVITY */}
-          <Col md={5}>
+
+
+          <Col md={5} className="project-card">
+
             <ProjectCard
+
               imgPath={chatify}
+
               isBlog={false}
+
               title="TE Connectivity Pvt Ltd"
-              description="Worked with CRM tools and improved operations."
+
+              description={
+
+                <ul>
+
+                  <li>Collaborated with teams to implement new sales strategies.</li>
+
+                  <li>Analyzed customer feedback and market data for optimization.</li>
+
+                  <li>Used Salesforce and ERP/CRM tools to streamline operations.</li>
+
+                  <li>Improved productivity and operational efficiency.</li>
+
+                  <li>Prepared detailed reports to support decision-making.</li>
+
+                </ul>
+
+              }
+
             />
+
           </Col>
 
-          {/* ⚫ BPCL */}
-          <Col md={5}>
+
+
+          <Col md={5} className="project-card">
+
             <ProjectCard
+
               imgPath={bitsOfCode}
+
               isBlog={false}
+
               title="Bharat Petroleum Corporation Ltd"
-              description="Performed financial analysis and evaluation."
+
+              description={
+
+                <ul>
+
+                  <li>Analyzed financial statements to assess financial health.</li>
+
+                  <li>Focused on key metrics like liquidity ratios and cash flow sufficiency.</li>
+
+                  <li>Performed financial analysis using ROI and profitability ratios.</li>
+
+                  <li>Evaluated BPCL’s investment portfolio and capital allocation.</li>
+
+                  <li>Benchmarked performance against industry peers.</li>
+
+                  <li>Provided insights to enhance financial strategy and operations.</li>
+
+                </ul>
+
+              }
+
             />
+
           </Col>
+
+
+
 
         </Row>
+
       </Container>
+
     </Container>
+
   );
+
 }
+
+
 
 export default Projects;
